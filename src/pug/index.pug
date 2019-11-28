@@ -1,0 +1,279 @@
+extends templates/main
+
+block variables
+	- var title = 'Главная страница'
+	- var pageClass = 'index-page'
+block content
+	section.section-banner.section-banner--full.p-0
+		.swiper-container.banner-slider
+			.swiper-wrapper
+				.swiper-slide(style="background: url(/img/content/banner1.jpg) no-repeat center/cover")
+				.swiper-slide(style="background: url(/img/content/banner2.jpg) no-repeat center/cover")
+				.swiper-slide(style="background: url(/img/content/banner3.jpg) no-repeat center/cover")
+				.swiper-slide(style="background: url(/img/content/banner1.jpg) no-repeat center/cover")
+				.swiper-slide(style="background: url(/img/content/banner2.jpg) no-repeat center/cover")
+		.banner-content
+			.banner-title.swiper-container.banner-slider-title
+				.swiper-wrapper
+					.swiper-slide
+						h1 Широкий выбор 
+						h3 багета и паспарту
+					.swiper-slide
+						h1 Широкий
+						h3 багепарту
+					.swiper-slide
+						h1 Широкий выбор 
+						h3 багета и паспарту
+					.swiper-slide
+						h1 Широкий
+						h3 багепарту
+					.swiper-slide
+						h1 Широкий
+						h3 багепарту
+			.bar-pagination
+			.banner-nav.d-flex
+				.fraction-pagination
+					.fraction-current.mr-2
+					.fraction-total
+				.swiper-pagination.banner-pagination
+				div.d-flex
+					.swiper-button-prev.banner-button-prev.mr-4
+						+icon('swiper-nav')
+					.swiper-button-next.banner-button-next
+						+icon('swiper-nav')
+	section.section-services
+		.container
+			.row
+				.col-lg-9.offset-lg-3
+					.section-title
+						h2 Услуги
+						a.arrow-link(href="")
+							| Cмотреть все
+							+icon('arrow')
+					.row.justify-content-center
+						.col-sm-6.col-xl-4.photo-block__container
+							.photo-block
+								+pic('photo-block__img','content','photo1','jpg')
+								.angle
+									svg(width='83', height='110', viewBox='0 0 83 110', fill='none', xmlns='http://www.w3.org/2000/svg')
+										path.polygon(d='M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3', stroke='#C4C4C4', stroke-width='6')
+										path.angle-svg(d='M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z', fill='#C4C4C4')
+										path.angle-svg(d='M76.9999 0H82.9999L76.9999 6V0Z', fill='#C4C4C4')
+								a.arrow-link.photo-block__title.stretched-link(href="")
+									| Оформление живописи
+									+icon('arrow')
+						.col-sm-6.col-xl-4.photo-block__container
+							.photo-block
+								+pic('photo-block__img','content','photo2','jpg')
+								.angle
+									svg(width='83', height='110', viewBox='0 0 83 110', fill='none', xmlns='http://www.w3.org/2000/svg')
+										path.polygon(d='M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3', stroke='#C4C4C4', stroke-width='6')
+										path.angle-svg(d='M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z', fill='#C4C4C4')
+										path.angle-svg(d='M76.9999 0H82.9999L76.9999 6V0Z', fill='#C4C4C4')
+								a.arrow-link.photo-block__title.stretched-link(href="")
+									| Оформление вышивки
+									+icon('arrow')
+						.col-sm-6.col-xl-4.photo-block__container
+							.photo-block
+								+pic('photo-block__img','content','photo3','jpg')
+								.angle
+									svg(width='83', height='110', viewBox='0 0 83 110', fill='none', xmlns='http://www.w3.org/2000/svg')
+										path.polygon(d='M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3', stroke='#C4C4C4', stroke-width='6')
+										path.angle-svg(d='M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z', fill='#C4C4C4')
+										path.angle-svg(d='M76.9999 0H82.9999L76.9999 6V0Z', fill='#C4C4C4')
+								a.arrow-link.photo-block__title.stretched-link(href="")
+									| Оформление икон
+									+icon('arrow')
+						.col-sm-6.col-xl-4.photo-block__container
+							.photo-block
+								+pic('photo-block__img','content','photo4','jpg')
+								.angle
+									svg(width='83', height='110', viewBox='0 0 83 110', fill='none', xmlns='http://www.w3.org/2000/svg')
+										path.polygon(d='M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3', stroke='#C4C4C4', stroke-width='6')
+										path.angle-svg(d='M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z', fill='#C4C4C4')
+										path.angle-svg(d='M76.9999 0H82.9999L76.9999 6V0Z', fill='#C4C4C4')
+								a.arrow-link.photo-block__title.stretched-link(href="")
+									| Оформление фотографий
+									+icon('arrow')
+						.col-sm-6.col-xl-4.photo-block__container
+							.photo-block
+								+pic('photo-block__img','content','photo5','jpg')
+								.angle
+									svg(width='83', height='110', viewBox='0 0 83 110', fill='none', xmlns='http://www.w3.org/2000/svg')
+										path.polygon(d='M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3', stroke='#C4C4C4', stroke-width='6')
+										path.angle-svg(d='M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z', fill='#C4C4C4')
+										path.angle-svg(d='M76.9999 0H82.9999L76.9999 6V0Z', fill='#C4C4C4')
+								a.arrow-link.photo-block__title.stretched-link(href="")
+									| Фигурная резка паспарту
+									+icon('arrow')
+						.col-sm-6.col-xl-4.photo-block__container
+							.photo-block
+								+pic('photo-block__img','content','photo6','jpg')
+								.angle
+									svg(width='83', height='110', viewBox='0 0 83 110', fill='none', xmlns='http://www.w3.org/2000/svg')
+										path.polygon(d='M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3', stroke='#C4C4C4', stroke-width='6')
+										path.angle-svg(d='M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z', fill='#C4C4C4')
+										path.angle-svg(d='M76.9999 0H82.9999L76.9999 6V0Z', fill='#C4C4C4')
+								a.arrow-link.photo-block__title.stretched-link(href="")
+									| Дорисовка на паспарту
+									+icon('arrow')
+	section.section-promo.text-white
+		.circle-promo
+		.container
+			.row
+				.col-lg-9.offset-lg-3
+					h2 Пример оформления живописи
+					+pic('mobile-cons w-100 d-sm-none mt-5 mb-4', 'general','mobile-cons','png')
+					.constructor-container
+						.constructor.my-5.wow.d-none.d-sm-block(data-wow-offset="400")
+							.part.part1
+								img(src="/img/general/part (1).jpg", alt="")
+								.part-text Задник
+							.part.part2
+								img(src="/img/general/part (2).jpg", alt="")
+								.part-text.part-text--top Оригинал
+							.part.part3
+								img(src="/img/general/part (1).png", alt="")
+								.part-text Паспарту
+							.part.part4
+								img(src="/img/general/part (2).png", alt="")
+								.part-text.part-text--top Декоративный кант
+							.part.part5
+								img(src="/img/general/part (3).png", alt="")
+								.part-text Стекло
+							.part.part6
+								img(src="/img/general/part (4).png", alt="")
+								.part-text.part-text--top Багет
+					//- .container.text-center.d-flex
+					//- 	.const-toggle-undo
+					//- 		+icon('share')
+					//- 	.const-toggle-forward
+					//- 		+icon('share')
+							
+	section.section-workroom
+		.container
+			.row
+				.col-lg-9.offset-lg-3
+					h2 Декор Люкс — <span class="text-lowercase">багетная мастерская</span>
+					.row.no-gutters
+						.col-sm-5.img-block__left.order-1.order-sm-0
+							.img-block.rectangle.wow.img-block--big(data-wow-offset="200")
+								+pic('img-block__photo', 'content', 'workroom1','jpg')
+								.img-block__num 10
+								.block-title 10 лет опыта работы
+							a.btn.arrow-link.bg-transparent(href="")
+								| Подробнее
+								+icon('arrow') 
+						.col-sm-7.img-block__right.d-flex.justify-content-center.flex-column.mb-5.mb-sm-0
+							.img-block.rectangle.wow(data-wow-offset="200")
+								+pic('img-block__photo', 'content', 'workroom2','jpg')
+								.img-block__num 2000
+								.block-title 2000 выполненных заказов
+
+							.img-block.rectangle.blue.wow(data-wow-offset="200")
+								+pic('img-block__photo', 'content', 'workroom3','jpg')
+								.img-block__num 3
+								.block-title 3 часа оформляем одну работу
+	section.section-cases.bg-secondary
+		.container
+			.row
+				.col-lg-9.offset-lg-3
+					h2 Наши работы
+					.d-flex.align-items-start.justify-content-between.flex-column.flex-sm-row
+						.title-desc.mb-4 Мы предложим Вам наиболее подходящие варианты оформления, дадим подробные объяснения и советы, качественно изготовим красивое обрамление для Вашего произведения. 
+						a.btn.arrow-link.bg-transparent.mt-2.mb-4.mb-sm-0(href="")
+							| Все работы
+							+icon('arrow')
+					.swiper-container.case-slider
+						.swiper-wrapper
+							.swiper-slide.rectangle
+								+pic('case-photo', 'content', 'case1','jpg')
+							.swiper-slide.rectangle
+								+pic('case-photo', 'content', 'case2','jpg')
+							.swiper-slide.rectangle
+								+pic('case-photo', 'content', 'case3','jpg')
+							.swiper-slide.rectangle
+								+pic('case-photo', 'content', 'case4','jpg')
+							.swiper-slide.rectangle
+								+pic('case-photo', 'content', 'case1','jpg')
+						.swiper-button-prev.case-prev
+							+icon('arrow')
+						.swiper-button-next.case-next
+							+icon('arrow')
+	section.section-reviews
+		.container
+			.row
+				.col-lg-9.offset-lg-3
+					h2 Отзывы
+					.row
+						.col-md-5.order-1.order-md-0.review-slider-text-container
+							.swiper-container.review-slider-text
+								.swiper-wrapper
+									.swiper-slide
+										p.
+											Багетная мастерская очень хорошая!
+											Я с 2011 года приношу свои работы.
+											Все оформляют качественно и со вкусом.
+											Всегда в срок, бывает даже раньше!
+											Девочки, очень хорошо подбирают
+											оформление, прислушиваются
+											к нашему мнению, помогают подчеркнуть
+											красоту наших работ! Большой выбор
+											багета, есть и дорогие, и подешевле.
+											Я ваш постоянный клиент!
+										.text-big.b.mb-5 Ольга Штремель
+									.swiper-slide
+										p.
+											Багетная мастерская очень хорошая!
+											Все оформляют качественно и со вкусом.
+											Всегда в срок, бывает даже раньше!
+											Девочки, очень хорошо подбирают
+											оформление, прислушиваются
+											багета, есть и дорогие, и подешевле.
+											Я ваш постоянный клиент!
+										.text-big.b.mb-5 Ольга Штремель
+						
+							a.arrow-link.bg-transparent.btn(href="")
+								| Все ОТЗЫВЫ
+								+icon('arrow')
+						.col-md-6.offset-md-1.review-slider-photo-container.h-100
+							.swiper-container.review-slider-photo
+								.swiper-wrapper
+									.swiper-slide
+										+pic('review-photo', 'content', 'review1','jpg')
+									.swiper-slide
+										+pic('review-photo', 'content', 'review1','jpg')
+							.review-nav
+								.review-nav__arrow
+									.swiper-button-prev.review-prev
+										+icon('arrow')
+									.swiper-button-next.review-next
+										+icon('arrow')
+								.swiper-pagination.review-pagination
+	section.section-news.bg-secondary
+		.container
+			.row
+				.col-lg-9.offset-lg-3
+					h2.mb-5 Новости и акции
+					.row.no-gutters
+						.col-sm-5.img-block__left.order-1.order-sm-0
+							.img-block.rectangle.wow(data-wow-offset="200")
+								+pic('img-block__photo', 'content', 'news1','jpg')
+								.block-title 
+									.img-block__title.mb-2 Распродажа пластиковых багетов
+									.img-block__date.text-primary 12 сентября
+									.block-desc Акция продлится с 16.09 по 16.10
+							a.btn.arrow-link.bg-transparent.mt-5(href="")
+								| Все Новости
+								+icon('arrow') 
+						.col-sm-7.img-block__right.d-flex.justify-content-center.flex-column.mb-5
+							.img-block.rectangle.wow(data-wow-offset="200")
+								+pic('img-block__photo', 'content', 'news2','jpg')
+								.block-title 
+									.img-block__title.mb-2 Авторские схемы оформления
+									.img-block__date.text-primary 12 сентября
+							.img-block.rectangle.blue.wow(data-wow-offset="200")
+								+pic('img-block__photo', 'content', 'news3','jpg')
+								.block-title 
+									.img-block__title.mb-2 Акция три плюс два
+									.img-block__date.text-primary 10 октября

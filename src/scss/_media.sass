@@ -1,0 +1,164 @@
+@import "vars"
+
+/*==========  Internet explorer  ==========*/
+
+@media all and (-ms-high-contrast:none)
+
+
+/*==========  FireFox  ==========*/
+
+@-moz-document url-prefix()
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1400px
++media-breakpoint-down(xl)
+
+// ≥1200px
++media-breakpoint-down(lg)
+  section
+    padding: calc(2rem + 2.5vw) 0
+  .section-promo .constructor.animated
+    transform: translate(-45%) rotatey(0) scale(1)
+  .card-item__cart.btn
+    padding: 0.58rem .8rem .5rem
+// ≥992px
++media-breakpoint-down(md)
+  .header
+    z-index: -55
+    left: auto
+    right: 0
+  .case-slider
+    width: 100vw
+  .mobile-header
+    display: flex
+  .header
+    background: #fff
+    height: auto
+    min-height: -webkit-fill-available
+    & > *
+      opacity: 0
+      transform: translatey(-15px)
+      transition: .3s ease .4s
+  .header.is-active
+    & > *
+      opacity: 1
+      transform: translate(0)
+
+  #map 
+    height: 50vh
+    position: relative
+    left: auto
+    right: auto
+    width: 100%
+    margin-top: 100px
+  .cases-list
+    columns: 3
+// ≥768px
++media-breakpoint-down(sm)
+  .block-title
+    width: 100%
+    font-size: 1.1rem
+    padding: .5rem 1rem
+  .review-slider-photo-container
+    margin-bottom: 4rem
+  .filter-item
+    margin-bottom: 1rem
+    &__price
+      margin-bottom: .2rem
+  .section-promo .constructor.animated
+    transform: translate(-45%) rotatey(0) scale(.7)
+  .constructor-container
+    padding: 0
+  .section-promo
+    &:before, &:after
+      display: none
+// ≥576px
++media-breakpoint-down(xs)
+  .header-content
+    max-height: 360px
+    & .btn
+      display: none
+  .section-promo .constructor.animated
+    transform: translate(-55%) rotatey(0) scale(.4)
+  .section-promo .constructor
+    transform: translate(-50%) rotatey(0) scale(.6)
+  .case-slider
+    width: 100%
+  .img-block__right .img-block:first-child
+    margin-left: 0
+    margin-bottom: 3.9375rem
+  .section-news .img-block__right .img-block:first-child
+    margin-left: 0
+    margin-bottom: 3rem
+  .review-slider-photo 
+    transform: translateX(0)
+  .review-slider-text-container:before, .review-nav
+    left: 0
+  .review-slider-photo-container:after
+    bottom: -20px
+    left: 0
+    width: 70%
+    height: 70%
+  .title-desc
+    max-width: 100%
+  .section-news .img-block__right .img-block:first-child .block-title
+    transform: translatey(-30%)
+  .banner-content
+    width: calc(100% - 8px)
+  .banner-title h1
+    font-size: 2.525rem
+  form
+    .btn
+      width: 100%!important
+  .instagram-block
+    margin-bottom: 1rem
+  .price-block
+    text-align: left
+  .icon-ruble
+    transform: translatey(-50%)
+    left: auto
+    right: 0
+  .arrow-link.btn
+    padding: 0.58rem 1rem .5rem
+  .photo-block__container
+    justify-content: center
+  .photo-block .photo-block__img
+    transform: translate(0)
+  .img-block--big.img-block
+    width: 70%
+    .img-block__photo
+      position: relative
+      display: block
+      width: 100%
+      padding: 0
+      overflow: hidden
+      &:after
+        display: block
+        content: ""
+        padding-top: 75%
+      img
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        width: 100%
+        border: 0
+  .cases-list
+    columns: 2
+/*==========  mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+  
+// ≤1200px
++media-breakpoint-up(xl)
+  .photo-block__container:nth-child(3n+2)
+    transform: translatey(20px)

@@ -1,0 +1,151 @@
+extends ../templates/main
+
+block variables
+  - var title = 'Услуги'
+  - var pageClass = 'secondary-page'
+
+block content
+  section.section-banner.section-banner--small.p-0
+    div.h-100(style="background: url(/img/content/banner2.jpg) no-repeat center/cover")
+    .banner-content
+      .banner-title
+        h4 Услуги
+  section.section-services
+    .container
+      .row
+        .col-lg-9.offset-lg-3
+          .section-title
+            h2 Услуги
+          .row.justify-content-center
+            .col-sm-6.col-xl-4.photo-block__container
+              .photo-block
+                +pic('photo-block__img','content','photo1','jpg')
+                .angle
+                  svg(width='83', height='110', viewBox='0 0 83 110', fill='none', xmlns='http://www.w3.org/2000/svg')
+                    path.polygon(d='M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3', stroke='#C4C4C4', stroke-width='6')
+                    path.angle-svg(d='M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z', fill='#C4C4C4')
+                    path.angle-svg(d='M76.9999 0H82.9999L76.9999 6V0Z', fill='#C4C4C4')
+                a.arrow-link.photo-block__title.stretched-link(href="")
+                  | Оформление живописи
+                  +icon('arrow')
+            .col-sm-6.col-xl-4.photo-block__container
+              .photo-block
+                +pic('photo-block__img','content','photo2','jpg')
+                .angle
+                  svg(width='83', height='110', viewBox='0 0 83 110', fill='none', xmlns='http://www.w3.org/2000/svg')
+                    path.polygon(d='M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3', stroke='#C4C4C4', stroke-width='6')
+                    path.angle-svg(d='M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z', fill='#C4C4C4')
+                    path.angle-svg(d='M76.9999 0H82.9999L76.9999 6V0Z', fill='#C4C4C4')
+                a.arrow-link.photo-block__title.stretched-link(href="")
+                  | Оформление вышивки
+                  +icon('arrow')
+            .col-sm-6.col-xl-4.photo-block__container
+              .photo-block
+                +pic('photo-block__img','content','photo3','jpg')
+                .angle
+                  svg(width='83', height='110', viewBox='0 0 83 110', fill='none', xmlns='http://www.w3.org/2000/svg')
+                    path.polygon(d='M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3', stroke='#C4C4C4', stroke-width='6')
+                    path.angle-svg(d='M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z', fill='#C4C4C4')
+                    path.angle-svg(d='M76.9999 0H82.9999L76.9999 6V0Z', fill='#C4C4C4')
+                a.arrow-link.photo-block__title.stretched-link(href="")
+                  | Оформление икон
+                  +icon('arrow')
+            .col-sm-6.col-xl-4.photo-block__container
+              .photo-block
+                +pic('photo-block__img','content','photo4','jpg')
+                .angle
+                  svg(width='83', height='110', viewBox='0 0 83 110', fill='none', xmlns='http://www.w3.org/2000/svg')
+                    path.polygon(d='M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3', stroke='#C4C4C4', stroke-width='6')
+                    path.angle-svg(d='M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z', fill='#C4C4C4')
+                    path.angle-svg(d='M76.9999 0H82.9999L76.9999 6V0Z', fill='#C4C4C4')
+                a.arrow-link.photo-block__title.stretched-link(href="")
+                  | Оформление фотографий
+                  +icon('arrow')
+            .col-sm-6.col-xl-4.photo-block__container
+              .photo-block
+                +pic('photo-block__img','content','photo5','jpg')
+                .angle
+                  svg(width='83', height='110', viewBox='0 0 83 110', fill='none', xmlns='http://www.w3.org/2000/svg')
+                    path.polygon(d='M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3', stroke='#C4C4C4', stroke-width='6')
+                    path.angle-svg(d='M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z', fill='#C4C4C4')
+                    path.angle-svg(d='M76.9999 0H82.9999L76.9999 6V0Z', fill='#C4C4C4')
+                a.arrow-link.photo-block__title.stretched-link(href="")
+                  | Фигурная резка паспарту
+                  +icon('arrow')
+            .col-sm-6.col-xl-4.photo-block__container
+              .photo-block
+                +pic('photo-block__img','content','photo6','jpg')
+                .angle
+                  svg(width='83', height='110', viewBox='0 0 83 110', fill='none', xmlns='http://www.w3.org/2000/svg')
+                    path.polygon(d='M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3', stroke='#C4C4C4', stroke-width='6')
+                    path.angle-svg(d='M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z', fill='#C4C4C4')
+                    path.angle-svg(d='M76.9999 0H82.9999L76.9999 6V0Z', fill='#C4C4C4')
+                a.arrow-link.photo-block__title.stretched-link(href="")
+                  | Дорисовка на паспарту
+                  +icon('arrow')
+            .col-sm-6.col-xl-4.photo-block__container
+              .photo-block
+                +pic('photo-block__img','content','photo1','jpg')
+                .angle
+                  svg(width='83', height='110', viewBox='0 0 83 110', fill='none', xmlns='http://www.w3.org/2000/svg')
+                    path.polygon(d='M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3', stroke='#C4C4C4', stroke-width='6')
+                    path.angle-svg(d='M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z', fill='#C4C4C4')
+                    path.angle-svg(d='M76.9999 0H82.9999L76.9999 6V0Z', fill='#C4C4C4')
+                a.arrow-link.photo-block__title.stretched-link(href="")
+                  | Оформление живописи
+                  +icon('arrow')
+            .col-sm-6.col-xl-4.photo-block__container
+              .photo-block
+                +pic('photo-block__img','content','photo2','jpg')
+                .angle
+                  svg(width='83', height='110', viewBox='0 0 83 110', fill='none', xmlns='http://www.w3.org/2000/svg')
+                    path.polygon(d='M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3', stroke='#C4C4C4', stroke-width='6')
+                    path.angle-svg(d='M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z', fill='#C4C4C4')
+                    path.angle-svg(d='M76.9999 0H82.9999L76.9999 6V0Z', fill='#C4C4C4')
+                a.arrow-link.photo-block__title.stretched-link(href="")
+                  | Оформление вышивки
+                  +icon('arrow')
+            .col-sm-6.col-xl-4.photo-block__container
+              .photo-block
+                +pic('photo-block__img','content','photo3','jpg')
+                .angle
+                  svg(width='83', height='110', viewBox='0 0 83 110', fill='none', xmlns='http://www.w3.org/2000/svg')
+                    path.polygon(d='M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3', stroke='#C4C4C4', stroke-width='6')
+                    path.angle-svg(d='M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z', fill='#C4C4C4')
+                    path.angle-svg(d='M76.9999 0H82.9999L76.9999 6V0Z', fill='#C4C4C4')
+                a.arrow-link.photo-block__title.stretched-link(href="")
+                  | Оформление икон
+                  +icon('arrow')
+            .col-sm-6.col-xl-4.photo-block__container
+              .photo-block
+                +pic('photo-block__img','content','photo4','jpg')
+                .angle
+                  svg(width='83', height='110', viewBox='0 0 83 110', fill='none', xmlns='http://www.w3.org/2000/svg')
+                    path.polygon(d='M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3', stroke='#C4C4C4', stroke-width='6')
+                    path.angle-svg(d='M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z', fill='#C4C4C4')
+                    path.angle-svg(d='M76.9999 0H82.9999L76.9999 6V0Z', fill='#C4C4C4')
+                a.arrow-link.photo-block__title.stretched-link(href="")
+                  | Оформление фотографий
+                  +icon('arrow')
+            .col-sm-6.col-xl-4.photo-block__container
+              .photo-block
+                +pic('photo-block__img','content','photo5','jpg')
+                .angle
+                  svg(width='83', height='110', viewBox='0 0 83 110', fill='none', xmlns='http://www.w3.org/2000/svg')
+                    path.polygon(d='M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3', stroke='#C4C4C4', stroke-width='6')
+                    path.angle-svg(d='M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z', fill='#C4C4C4')
+                    path.angle-svg(d='M76.9999 0H82.9999L76.9999 6V0Z', fill='#C4C4C4')
+                a.arrow-link.photo-block__title.stretched-link(href="")
+                  | Фигурная резка паспарту
+                  +icon('arrow')
+            .col-sm-6.col-xl-4.photo-block__container
+              .photo-block
+                +pic('photo-block__img','content','photo6','jpg')
+                .angle
+                  svg(width='83', height='110', viewBox='0 0 83 110', fill='none', xmlns='http://www.w3.org/2000/svg')
+                    path.polygon(d='M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3', stroke='#C4C4C4', stroke-width='6')
+                    path.angle-svg(d='M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z', fill='#C4C4C4')
+                    path.angle-svg(d='M76.9999 0H82.9999L76.9999 6V0Z', fill='#C4C4C4')
+                a.arrow-link.photo-block__title.stretched-link(href="")
+                  | Дорисовка на паспарту
+                  +icon('arrow')

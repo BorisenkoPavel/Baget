@@ -1,0 +1,278 @@
+extends ../templates/main
+
+block variables
+  - var title = 'Каталог'
+block content
+  section.section-banner.p-0
+    div.h-100(style="background: url(/img/content/banner2.jpg) no-repeat center/cover")
+    .banner-content
+      .banner-title
+        h1 Багетные <br>рамы
+  section.section-catalog
+    .container
+      .filter-block.row.mb-5
+        .col-md-3.col-lg-2.offset-lg-3
+          label.filter-item
+            .filter-item__price Сортировка
+            .select-style
+              select
+                option(value="" selected) 
+                option(value="Популярные") Популярные
+                option(value="Любой") Любой
+                option(value="Красный") Красный
+        .col-md-3.col-lg-2
+          label.filter-item
+            .filter-item__price Материал
+            select
+              option(value="" selected) 
+              option(value="Популярные") Популярные
+              option(value="Любой") Любой
+              option(value="Красный") Красный
+        .col-md-3.col-lg-2
+          label.filter-item
+            .filter-item__price Цвет
+            select
+              option(value="" selected) 
+              option(value="Популярные") Популярные
+              option(value="Любой") Любой
+              option(value="Красный") Красный
+        .col-md-3.col-lg-3
+          label.filter-item
+            .filter-item__price Цена
+            input(type="text" class="js-range-slider" name="range" value="")
+      .row
+        .col-lg-9.offset-lg-3
+          .catalog-list.row
+            .col-sm-6.col-md-4
+              .card-item.hit-item.new-item
+                .card-item__item-new Новинка
+                .card-item__content
+                  .card-item__photo(style="background-image: url(/img/content/item1.jpg)")
+                  .card-item__material Рама пластиковая
+                  .card-item__title Багетная рама 7551
+                  .card-item__spec
+                    .card-item__spec-title Размер:
+                    .card-item__spec-value 30х40см
+                  .card-item__spec
+                    .card-item__spec-title Ширина профиля:
+                    .card-item__spec-value 75мм
+                  .card-item__spec
+                    .card-item__spec-title Наличие:
+                    .card-item__spec-value В наличии
+                .card-item__footer
+                  .card-item__price 3 480 ₽
+                  .card-item__cart.btn
+                    +icon('basket')
+                    span Купить
+            .col-sm-6.col-md-4
+              .card-item
+                .card-item__item-new Новинка
+                .card-item__item-hit Хит продаж
+                .card-item__content
+                  .card-item__photo(style="background-image: url(/img/content/item2.jpg)")
+                  .card-item__material Рама пластиковая
+                  .card-item__title Багетная рама 7551
+                  .card-item__spec
+                    .card-item__spec-title Размер:
+                    .card-item__spec-value 30х40см
+                  .card-item__spec
+                    .card-item__spec-title Ширина профиля:
+                    .card-item__spec-value 75мм
+                  .card-item__spec
+                    .card-item__spec-title Наличие:
+                    .card-item__spec-value В наличии
+                .card-item__footer
+                  .card-item__price 3 480 ₽
+                  .card-item__cart.btn
+                    +icon('basket')
+                    span Купить
+            .col-sm-6.col-md-4
+              .card-item.hit-item.new-item
+                .card-item__item-new Новинка
+                .card-item__item-hit Хит продаж
+                .card-item__content
+                  .card-item__photo(style="background-image: url(/img/content/item1.jpg)")
+                  .card-item__material Рама пластиковая
+                  .card-item__title Багетная рама 7551
+                  .card-item__spec
+                    .card-item__spec-title Размер:
+                    .card-item__spec-value 30х40см
+                  .card-item__spec
+                    .card-item__spec-title Ширина профиля:
+                    .card-item__spec-value 75мм
+                  .card-item__spec
+                    .card-item__spec-title Наличие:
+                    .card-item__spec-value В наличии
+                .card-item__footer
+                  .card-item__price 3 480 ₽
+                  .card-item__cart.btn
+                    +icon('basket')
+                    span Купить
+            .col-sm-6.col-md-4
+              .card-item
+                .card-item__item-new Новинка
+                .card-item__item-hit Хит продаж
+                .card-item__content
+                  .card-item__photo(style="background-image: url(/img/content/item2.jpg)")
+                  .card-item__material Рама пластиковая
+                  .card-item__title Багетная рама 7551
+                  .card-item__spec
+                    .card-item__spec-title Размер:
+                    .card-item__spec-value 30х40см
+                  .card-item__spec
+                    .card-item__spec-title Ширина профиля:
+                    .card-item__spec-value 75мм
+                  .card-item__spec
+                    .card-item__spec-title Наличие:
+                    .card-item__spec-value В наличии
+                .card-item__footer
+                  .card-item__price 3 480 ₽
+                  .card-item__cart.btn
+                    +icon('basket')
+                    span Купить
+            .col-sm-6.col-md-4
+              .card-item.hit-item.new-item
+                .card-item__item-new Новинка
+                .card-item__item-hit Хит продаж
+                .card-item__content
+                  .card-item__photo(style="background-image: url(/img/content/item1.jpg)")
+                  .card-item__material Рама пластиковая
+                  .card-item__title Багетная рама 7551
+                  .card-item__spec
+                    .card-item__spec-title Размер:
+                    .card-item__spec-value 30х40см
+                  .card-item__spec
+                    .card-item__spec-title Ширина профиля:
+                    .card-item__spec-value 75мм
+                  .card-item__spec
+                    .card-item__spec-title Наличие:
+                    .card-item__spec-value В наличии
+                .card-item__footer
+                  .card-item__price 3 480 ₽
+                  .card-item__cart.btn
+                    +icon('basket')
+                    span Купить
+            .col-sm-6.col-md-4
+              .card-item
+                .card-item__item-new Новинка
+                .card-item__item-hit Хит продаж
+                .card-item__content
+                  .card-item__photo(style="background-image: url(/img/content/item2.jpg)")
+                  .card-item__material Рама пластиковая
+                  .card-item__title Багетная рама 7551
+                  .card-item__spec
+                    .card-item__spec-title Размер:
+                    .card-item__spec-value 30х40см
+                  .card-item__spec
+                    .card-item__spec-title Ширина профиля:
+                    .card-item__spec-value 75мм
+                  .card-item__spec
+                    .card-item__spec-title Наличие:
+                    .card-item__spec-value В наличии
+                .card-item__footer
+                  .card-item__price 3 480 ₽
+                  .card-item__cart.btn
+                    +icon('basket')
+                    span Купить
+            .col-12
+              .promo-banner.d-flex.align-items-center.p-5(style="background-image: url(/img/content/promo-banner.jpg)")
+                h2.text-white.mb-0 Больше багетов<br> у нас в мастерской
+            .col-sm-6.col-md-4
+              .card-item
+                .card-item__item-new Новинка
+                .card-item__item-hit Хит продаж
+                .card-item__content
+                  .card-item__photo(style="background-image: url(/img/content/item2.jpg)")
+                  .card-item__material Рама пластиковая
+                  .card-item__title Багетная рама 7551
+                  .card-item__spec
+                    .card-item__spec-title Размер:
+                    .card-item__spec-value 30х40см
+                  .card-item__spec
+                    .card-item__spec-title Ширина профиля:
+                    .card-item__spec-value 75мм
+                  .card-item__spec
+                    .card-item__spec-title Наличие:
+                    .card-item__spec-value В наличии
+                .card-item__footer
+                  .card-item__price 3 480 ₽
+                  .card-item__cart.btn
+                    +icon('basket')
+                    span Купить
+            .col-sm-6.col-md-4
+              .card-item.hit-item.new-item
+                .card-item__item-new Новинка
+                .card-item__item-hit Хит продаж
+                .card-item__content
+                  .card-item__photo(style="background-image: url(/img/content/item1.jpg)")
+                  .card-item__material Рама пластиковая
+                  .card-item__title Багетная рама 7551
+                  .card-item__spec
+                    .card-item__spec-title Размер:
+                    .card-item__spec-value 30х40см
+                  .card-item__spec
+                    .card-item__spec-title Ширина профиля:
+                    .card-item__spec-value 75мм
+                  .card-item__spec
+                    .card-item__spec-title Наличие:
+                    .card-item__spec-value В наличии
+                .card-item__footer
+                  .card-item__price 3 480 ₽
+                  .card-item__cart.btn
+                    +icon('basket')
+                    span Купить
+            .col-sm-6.col-md-4
+              .card-item
+                .card-item__item-new Новинка
+                .card-item__item-hit Хит продаж
+                .card-item__content
+                  .card-item__photo(style="background-image: url(/img/content/item2.jpg)")
+                  .card-item__material Рама пластиковая
+                  .card-item__title Багетная рама 7551
+                  .card-item__spec
+                    .card-item__spec-title Размер:
+                    .card-item__spec-value 30х40см
+                  .card-item__spec
+                    .card-item__spec-title Ширина профиля:
+                    .card-item__spec-value 75мм
+                  .card-item__spec
+                    .card-item__spec-title Наличие:
+                    .card-item__spec-value В наличии
+                .card-item__footer
+                  .card-item__price 3 480 ₽
+                  .card-item__cart.btn
+                    +icon('basket')
+                    span Купить
+  section.section-form.bg-secondary
+    .container
+      .row
+        .col-md-6.col-lg-4.offset-lg-3.d-flex.flex-column.justify-content-between.mb-4.mb-md-0
+          h3 Оставьте заявку
+          form.mb-4
+            label.label-container.error
+              input.input-text(type="text")
+              span Представьтесь, пожалуйста
+            label.label-container
+              input.input-text(type="text")
+              span Ваш номер телефона 
+            label.label-container.label-container--textarea.mb-2
+              textarea.input-text(name="", rows="4")
+              span Оставьте комментарий...
+            input#file.inputfile(data-multiple-caption="{count} файла выбрано" type="file" name="file[]" multiple="")
+            label.label-file(for="file")
+              span Прикрепите файл, если необходимо
+            button.btn.w-50.justify-content-center(type='submit') Отправить
+        .col-md-6.col-lg-4.offset-lg-1
+          h3.mb-3 Мастерская в instagram
+            +icon('reload')
+          p.mb-4 Больше интересных работ можно посмотреть в нашем аккаунте: 
+            a(href=""): b @dekorlux1
+          .instagram-block.rectangle
+            .inst-col
+              img(src="img/content/inst1.jpg", alt="")
+              img(src="img/content/inst2.jpg", alt="")
+            .inst-col.inst-col--translate
+              img(src="img/content/inst3.jpg", alt="")
+              img(src="img/content/inst4.jpg", alt="")
+
+

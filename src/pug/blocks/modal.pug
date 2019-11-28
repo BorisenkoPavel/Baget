@@ -1,0 +1,21 @@
+#modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='modalTitle' aria-hidden='true')
+	.modal-dialog.modal-dialog-centered(role='document')
+		.modal-content.p-4.px-5
+			.modal-header.p-0.mb-5.border-0
+				h3 Оставьте заявку
+				button.close(type='button' data-dismiss='modal' aria-label='Close')
+					span(aria-hidden='true') &times;
+			form.mb-4
+				label.label-container.error
+					input.input-text(type="text")
+					span Представьтесь, пожалуйста
+				label.label-container
+					input.input-text(type="text")
+					span Ваш номер телефона 
+				label.label-container.label-container--textarea.mb-2
+					textarea.input-text(name="", rows="4")
+					span Оставьте комментарий...
+				input#file.inputfile(data-multiple-caption="{count} файла выбрано" type="file" name="file[]" multiple="")
+				label.label-file(for="file")
+					span Прикрепите файл, если это необходимо
+				button.btn.w-50.justify-content-center(type='submit') Отправить

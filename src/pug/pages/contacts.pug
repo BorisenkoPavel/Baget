@@ -1,0 +1,63 @@
+extends ../templates/main
+
+block variables
+  - var title = 'Контакты'
+  - var pageClass = 'secondary-page'
+
+block content
+  section.section-contacts.p-0
+    .container
+      .row
+        .col-lg-6
+          iframe#map(src="https://yandex.ru/map-widget/v1/?um=constructor%3A7557b84b8a4677d5a79237417cb8f6419d868327ae9c0c8d1dcc27b641d3fdae&amp;source=constructor" width="100%" height="720" frameborder="0")
+        .col-lg-5.offset-lg-1.py-5
+          h2 Контакты
+          h4 Офис и производство
+          p.address
+            | Москва, м.Преображенская площадь,
+            | ул. 
+            nobr 1-я
+            |  Бухвостова, д.12/11к11
+          .leftpadded
+            .info.numbers
+              div
+                a(href='tel:+74957265004')
+                  | +7 (495) 726-50-04
+              div
+                a(href='tel:+79154823693')
+                  | +7 915 482 36-93
+              div
+                a(href='tel:+79269498749') +7 926 949 87-49
+            .info.schedule
+              span
+                | График работы студии
+              span
+                | 10:00 — 20:00
+              span без выходных
+            .info.email
+              span
+                a(href='mailto:mosaic-module@mail.ru') mosaic-module@mail.ru
+            .info.important
+              span Важно!
+              p.js-fancy-links
+                | Посмотрите схему проезда для желающих приехать в наш офис
+                a(href='/local/pictures/contacts/auto.jpg') на автомобиле
+                |  или 
+                a(href='/local/pictures/contacts/pedestrian.jpg') добраться пешком
+
+            h4 Обратная связь
+            form.mb-4
+              label.label-container.error
+                input.input-text(type="text")
+                span Представьтесь, пожалуйста
+              label.label-container
+                input.input-text(type="text")
+                span Ваш номер телефона 
+              label.label-container.label-container--textarea.mb-2
+                textarea.input-text(name="", rows="4")
+                span Оставьте комментарий...
+              input#file.inputfile(data-multiple-caption="{count} файла выбрано" type="file" name="file[]" multiple="")
+              label.label-file(for="file")
+                span Прикрепите файл, если это необходимо
+              button.btn.w-50.justify-content-center(type='submit') Отправить
+

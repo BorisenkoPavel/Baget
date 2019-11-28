@@ -1,0 +1,27 @@
+header
+  .header.text-center
+    a.mb-4(href="/"): img.logo(src="img/general/logo.svg", alt="")
+    .header-content.d-flex.flex-column
+      ul.nav.no-decoration.d-flex.flex-column
+        li: a.link.py-2.d-inline-block(href="") Услуги
+        li: a.link.py-2.d-inline-block(href="") Материалы
+        li: a.link.py-2.d-inline-block(href="") Портфолио
+        li: a.link.py-2.d-inline-block(href="") Готовая продукция
+        li: a.link.py-2.d-inline-block(href="") Отзывы
+        li: a.link.py-2.d-inline-block(href="") О мастерской
+        li: a.link.py-2.d-inline-block(href="") Вопрос-ответ
+        li: a.link.py-2.d-inline-block(href="") Контакты
+      .btn(data-toggle="modal" data-target="#modal") Обратная связь
+      a.phone.link.b(href="tel: +73852639401") +7 (3852) 63-94-01
+      .social.d-flex.align-items-center.justify-content-center.mb-2
+        a(href="")
+          +icon('vk', 'mr-4 social-icon')
+        a(href="")
+          +icon('instagram', 'social-icon')
+    .copyright © Багетная мастерская «Декор Люкс» Разработка сайта — Е1Медиа
+    
+  .mobile-header
+    a(href="/"): img.logo.logo-mobile(src="img/general/logo.svg", alt="")
+    .hamburger.hamburger--arrowalt
+      .hamburger-box
+        .hamburger-inner

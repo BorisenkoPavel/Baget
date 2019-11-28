@@ -1,0 +1,98 @@
+extends ../templates/main
+
+block variables
+  - var title = 'Портфолио'
+  - var pageClass = 'secondary-page'
+
+block content
+  section.section-banner.section-banner--small.p-0
+    div.h-100(style="background: url(/img/content/banner2.jpg) no-repeat center/cover")
+    .banner-content
+      .banner-title
+        h4 Портфолио
+  section.section-cases.bg-secondary
+    .container
+      .row
+        .col-lg-9.offset-lg-3
+          h2 Наши работы
+          .tags
+            a.tag.main(href='') Все работы
+            a.tag.active(href='') Мозаика из камня
+            a.tag(href='') Мозаика в бассейн
+            a.tag(href='') Матричное панно
+            a.tag(href='') Мозаика из смальты
+            a.tag(href='') Мозаика в хаммам
+            a.tag.active(href='') Стеклянная мозаика
+            a.tag(href='') Микромозаика
+
+          .cases-list
+            a(href="/img/content/case1.jpg"  data-toggle="lightbox" data-gallery="gallery")
+              +pic('case-photo img-fluid', 'content', 'case1','jpg')
+            a(href="/img/content/case2.jpg" data-toggle="lightbox" data-gallery="gallery")
+              +pic('case-photo', 'content', 'case2','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case3','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case4','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case1','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case1','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case2','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case3','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case4','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case1','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case1','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case2','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case3','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case4','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case1','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case1','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case2','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case3','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case4','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case1','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case1','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case2','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case3','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case4','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case1','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case1','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case2','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case3','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case4','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case1','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case1','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case2','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case3','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case4','jpg')
+            a(href="")
+              +pic('case-photo', 'content', 'case1','jpg')

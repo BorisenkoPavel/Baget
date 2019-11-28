@@ -1,0 +1,1044 @@
+@import start
+.section-banner
+  height: 90vh
+.section-banner.section-banner--full
+  height: 100vh
+.banner-slider
+  height: 100%
+
+.banner-content
+  width: 460px
+  position: absolute
+  right: 0
+  bottom: 0
+  background: rgba(243, 243, 243, 0.9)
+  z-index: 20
+  padding: 1.25rem 1.875rem
+  .bar-pagination
+    position: absolute
+    right: 100%
+    background: $accent
+    width: 8px
+    top: 0
+    height: 0
+    z-index: 5
+    transition: .5s ease
+  &:after
+    content: ''
+    position: absolute
+    right: 100%
+    background: #fff
+    width: 8px
+    top: 0
+    height: 100%
+.banner-title
+  h1
+    font-size: 3.125rem
+    line-height: 1.1
+    margin-bottom: 0
+  h3
+    font-weight: normal
+    margin-bottom: 1rem
+.photo-block__container
+  transform: translate(0)
+  display: flex
+
+.photo-block__img
+  width: 100%
+  img
+    width: 100%
+.photo-block
+  position: relative
+  overflow: hidden
+  margin-bottom: 1.875rem
+  max-width: 350px
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  &:hover
+    .photo-block__img
+      transform: translate(0)
+    &:before
+      border-color: $accent
+    .angle
+      .angle-svg
+        fill: $accent
+      .polygon
+        stroke: $accent
+  &:before
+    content: ''
+    border: 1px solid #C4C4C4
+    top: 3px
+    bottom: 3px
+    left: 3px
+    right: 0
+    position: absolute
+    transition: .3s ease
+    z-index: 10
+    pointer-events: none
+  .angle
+    position: absolute
+    left: -3px
+    top: 0
+    path
+      transition: .3s ease
+  &__img
+    display: flex
+    justify-content: center
+    transform: translate(35%, 25%)
+    padding: 15px
+    padding-left: 18px
+    transition: .5s ease
+    z-index: -1
+    position: relative
+  &__title
+    padding: 0.8rem 0.625rem 0.9375rem 1.125rem
+    background-color: #fff
+    width: 100%
+    justify-content: center
+@keyframes construct-rev
+  from
+    transform: rotateY(4deg) scale(.8)
+  to
+    transform: rotateY(0) scale(1)
+@keyframes construct
+  from
+    transform: rotateY(0) scale(1)
+  to
+    transform: rotateY(4deg) scale(.8)
+.constructor-container
+  padding-top: 4rem
+.section-promo
+  overflow: hidden
+  position: relative
+  background-color: #CE2626
+  .circle-promo
+    position: absolute
+    width: 1091px
+    height: 533px
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+    background: rgba(254, 56, 56, 0.4)
+    filter: blur(120px)
+    border-radius: 50%
+    pointer-events: none
+  &:before
+    content: ''
+    background: rgba(227, 51, 51, 0.6)
+    height: 178px
+    width: 350px
+    position: absolute
+    top: 0
+    right: 0
+  &:after
+    content: ''
+    background: rgba(227, 51, 51, 0.6)
+    width: 431px
+    height: 413px
+    position: absolute
+    bottom: 0
+    right: 20%
+  .constructor.animated
+    transition-delay: 0s
+    left: 100%
+    transform: translate(-100%) rotatey(0) scale(1)
+    .part
+      transition-delay: 1s
+      .part-text
+        opacity: 1
+        transition-delay: 2.5s
+        &:after
+          height: 60px
+          transition-delay: 2.5s
+      img
+        transform: rotateY(0) scale(1)
+        transition-delay: 1s
+        filter: drop-shadow(-10px 10px 15px rgba(0, 0, 0, 0.5))
+
+    .part1
+      transform: translate( -160%, -50%)
+      img
+        animation: construct .5s linear .5s
+        animation-fill-mode: forwards
+    .part2
+      transform: translate( -165%, -74%)
+      img
+        animation: construct .5s linear .5s
+        animation-fill-mode: forwards
+    .part3
+      transform: translate( -140%, -55%)
+      img
+        animation: construct .5s linear .5s
+        animation-fill-mode: forwards
+      .part-text
+        &:after
+          height: 100px
+    .part4
+      transform: translate( -145%, -75.5%)
+      img
+        animation: construct .5s linear .5s
+        animation-fill-mode: forwards
+    .part5 
+      transform: translate( -115%, -50%)
+      opacity: 1
+      transition: transform 2s ease 1s, opacity .5s linear .7s
+      img
+        animation: construct .5s linear .5s
+        animation-fill-mode: forwards
+      .part-text
+        &:after
+          height: 89px
+    .part6
+      transform: translate(-80%, -60%)
+      img
+        animation: construct .5s linear .5s
+        animation-fill-mode: forwards
+        opacity: 1
+    .part5
+  .constructor
+    z-index: 5
+    perspective: 1000px
+    width: 433px
+    height: 315px
+    position: relative
+    display: block
+    will-change: transform, left
+    transform: translate(-50%) rotatey(0) scale(1)
+    transition: 1s ease
+    transition-delay: 2.5s
+    left: 50%
+    pointer-events: none
+    .part
+      perspective: 50px
+      transform: translate(0, 0)
+      transform-origin: center
+      position: absolute
+      opacity: 1
+      transition: 2s ease
+      transition-delay: 0s
+      top: 50%
+      left: 50%
+      // will-change: transform
+      // transform: translate( -50%, -50%)
+      transform: translate( -50%, -50%) scale(1)
+      img
+        // will-change: transform
+        transition: .4s ease
+        transition-delay: filter 1s
+        animation: construct-rev .5s linear 2s
+        animation-fill-mode: forwards
+        transform: rotateY(4deg) scale(.8)
+    .part1
+      height: 296px
+    .part5
+      opacity: 0
+      transition: transform 2s ease 0s, opacity .5s linear 2s
+    .part6
+      .part-text
+        left: 40%
+        transform: translateX(-50%)
+        top: -57px
+        margin: auto
+    .part4
+      height: 224px
+      .part-text
+        top: -78.5px
+        margin: auto
+    .part2
+      height: 254px
+      .part-text
+        top: -60px
+        margin: auto
+    .part3
+      .part-text
+        left: -20px
+        bottom: -100px
+        &:before
+          top: -110px
+        &:after
+          top: -100px
+    .part5
+      .part-text
+        bottom: -89px
+        &:before
+          top: -99px
+        &:after
+          top: -89px
+.part-text.part-text--top
+  bottom: auto
+  top: -70px
+  &:after
+    bottom: -60px
+    top: auto
+  &:before
+    top: auto
+    bottom: -70px
+.part-text
+  transition: .3s ease
+  position: absolute
+  bottom: -70px
+  font-size: 18px
+  opacity: 0
+  transition-delay: 0s
+  &:before
+    content: ''
+    position: absolute
+    width: 9px
+    height: 9px
+    border: 1px solid white
+    top: -70px
+    left: 0
+    right: 0
+    margin: auto
+    border-radius: 50%
+  &:after
+    content: ''
+    transition: .8s ease
+    height: 1px
+    width: 1px
+    background: white
+    top: -60px
+    margin: auto
+    left: 0
+    right: 0
+    position: absolute
+    transition-delay: 0s
+.rectangle
+  position: relative
+  &:before
+    content: ''
+    border: 1px solid $text
+    top: -10px
+    bottom: 10px
+    left: -10px
+    right: 10px
+    position: absolute
+    transition: .3s ease
+    z-index: 0
+    pointer-events: none
+.block-desc
+  font-size: 0.75rem
+.img-block.blue
+  .img-block__photo:before
+    background: linear-gradient(108.77deg, #E7FCFF 6.5%, rgba(231, 252, 255, 0.7) 94.33%)
+.img-block.rectangle
+  &:before
+    transform: scale(.5)
+    transition: .5s ease
+    transition-delay: .7s
+    transform-origin: center
+.img-block
+  position: relative
+  z-index: 2
+  &__date
+    font-size: 1rem
+    line-height: 1.2
+  &__photo
+    width: 100%
+    position: relative
+    img
+      width: 100%
+  &__num
+    font-family: $a-font
+    font-weight: bold
+    font-size: 12.5rem
+    line-height: 16.1875rem
+    color: #fff
+    transition: color .3s ease
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    text-align: center
+    opacity: .8
+    mix-blend-mode: soft-light
+    overflow: hidden
+    line-height: 1
+.block-title
+  background-color: #fff
+  position: absolute
+  bottom: -10px
+  font-size: 1.375rem
+  line-height: 1.625rem
+  padding: 1rem 1.5625rem
+  right: -30px
+  width: 75%
+  font-weight: 400
+  z-index: 5
+  transition: transform .7s ease .8s, opacity .7s ease .8s, color .3s
+  opacity: 0
+  transform: translatex(20px)
+.section-workroom
+  overflow-x: hidden
+  .img-block
+    &:hover
+      .block-title
+        color: $accent
+      .img-block__num
+        color: $accent
+    &:after
+      content: ''
+      position: absolute
+      bottom: -10%
+      left: -25%
+      width: 90%
+      height: 60%
+      background: linear-gradient(244.69deg, #F6F0E6 -1.38%, rgba(246, 240, 230, 0.7) 124.56%)
+      z-index: -1
+.img-block.animated
+  &:before
+    transform: scale(1)
+  .img-block__photo
+    &:before
+      transform: translate(-100%)
+  .block-title
+    opacity: 1
+    transform: translate(0)!important
+.img-block__photo
+  position: relative
+  overflow: hidden
+  display: block
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(244.69deg, #F6F0E6 -1.38%, rgba(246, 240, 230, 0.7) 124.56%)
+    transition: .6s ease
+    transition-delay: .3s
+.img-block__left
+  padding-top: 30px
+  .img-block
+    z-index: 10
+    margin-bottom: 4.375rem
+.img-block__right
+  .img-block
+    width: 70%
+    &:first-child
+      margin-left: 3.125rem
+      margin-bottom: 5.9375rem
+      z-index: 7
+      &:before
+        left: 10px
+        right: -10px
+      &:after
+        width: 80%
+        height: 115%
+        bottom: auto
+        top: 20%
+        left: -40%
+    &:last-child
+      margin-left: auto
+      margin-right: 0
+      z-index: 10
+      &:before
+        top: 10px
+        bottom: -10px
+      &:after
+        width: 80%
+        height: 140%
+        background: linear-gradient(108.77deg, #E7FCFF 6.5%, rgba(231, 252, 255, 0.7) 94.33%)
+        right: -30%
+        left: auto
+        top: auto
+        bottom: 5%
+      .block-title
+        right: auto
+        left: -60px
+        transform: translatex(-20px)
+.section-cases
+  overflow-x: hidden
+  .swiper-slide
+    display: flex
+    height: auto
+.case-photo
+  position: relative
+  display: flex
+  width: 100%
+  img
+    object-fit: cover
+    width: 100%
+  
+.case-slider
+  width: 70vw
+  padding: 25px 20px 90px
+  .swiper-slide
+    transition: .3s ease
+    &:before
+      transition: .3s ease
+      transform: scale(.8)
+      left: -10px
+      top: -10px
+      bottom: 10px
+      right: 10px
+  .swiper-slide-active
+    transform: scale(1.05)
+    &:before
+      transform: scale(1)
+.bg-secondary
+  overflow-x: hidden
+.section-form
+  overflow: visible
+.review-slider-photo
+  transform: translateX(20px)
+.review-slider-photo-container
+  &:after
+    content: ''
+    position: absolute
+    bottom: -60px
+    left: 0
+    width: 300px
+    height: 280px
+    background: linear-gradient(244.69deg, #F6F0E6 -1.38%, rgba(246, 240, 230, 0.7) 124.56%)
+    z-index: 0
+.review-nav
+  background: #fff
+  display: inline-block
+  width: 180px
+  height: 100px
+  padding: 15px 32px
+  position: absolute
+  bottom: -60px
+  z-index: 50
+  left: -60px
+  box-shadow: 5px -5px 10px -3px rgba(0,0,0, 0.1)
+  &__arrow
+    text-align: right
+.swiper-button-next.review-next
+  position: static
+  display: inline-flex
+  width: 27px
+  height: 10px
+.swiper-button-prev.review-prev
+  width: 27px
+  height: 10px
+  position: static
+  display: inline-flex
+  margin-right: 10px
+
+.review-photo
+  width: 100%
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    object-position: center
+.bg-secondary.position-relative
+  z-index: -2
+  & > div
+    z-index: 50
+.review-slider-text-container
+  position: relative
+  padding-top: 25px
+  &:before
+    content: ''
+    background-image: url('../img/general/quote.svg')
+    background-repeat: space
+    width: 100px
+    height: 65px
+    position: absolute
+    top: 0
+    left: -35px
+.review-slider-text
+  pointer-events: none
+.section-news
+  padding-bottom: 6rem
+  .block-title
+    width: 80%
+    transform: translateY(40%)
+  .img-block__right
+    .img-block
+      &:first-child
+        margin-left: 3.125rem
+        margin-bottom: 5.9375rem
+        .block-title
+          bottom: auto
+          top: -10px
+          transform: translatey(-50%)
+        &:before
+          top: 10px
+          bottom: -10px
+.wow
+  visibility: visible!important
+
+.services-img
+  position: relative
+  & img
+    transition: .8s ease
+    &:hover
+      transform: scale(1.05)
+  &:before
+    left: 10px
+    right: -10px
+    z-index: -1
+  &:after
+    content: ''
+    position: absolute
+    bottom: -80px
+    left: -50px
+    width: 300px
+    height: 280px
+    background: linear-gradient(244.69deg, #F6F0E6 -1.38%, rgba(246, 240, 230, 0.7) 124.56%)
+    z-index: -1
+  &-container
+    z-index: 5
+
+.price-block
+  position: relative
+  z-index: 0
+  text-align: center
+  &__title
+    font-size: 1.125rem
+    font-family: $a-font
+    color: $accent
+    font-weight: bold
+    letter-spacing: 0.04em
+  &__value
+    color: $accent
+    font-weight: bold
+    font-size: 1.75rem
+    line-height: 1.3
+    span 
+      font-size: 4.375rem
+.icon-ruble
+  position: absolute
+  fill: $secondary
+  width: 200px
+  height: 200px
+  top: 50%
+  left: 50%
+  transform: translatey(-50%)
+  z-index: -1
+
+
+.label-container.label-container--textarea
+  span
+    top: 1.5625rem
+    tranform: none
+.label-container.valid
+  .input-text
+    border: 1px solid $text
+.label-container.error
+  .input-text
+    border: 1px solid $danger
+    color: $danger
+  &:before
+    content: 'Поле заполнено некорректно'
+    color: $danger
+    font-size: 10px
+    position: absolute
+    bottom: 100%
+    right: 0
+.label-container
+  position: relative
+  display: block
+  margin-bottom: 1.3rem
+  input
+    height: 3.125rem
+  .input-text
+    background: transparent
+    border: 1px solid #BDBDBD
+    width: 100%
+    padding: 0 1.25rem
+  textarea
+    padding-top: 0.6875rem
+  span
+    position: absolute
+    top: 50%
+    transform: translatey(-50%)
+    transition: font-size .3s ease, top .3s ease
+    left: 0.625rem
+    padding: 0 10px
+    display: inline-block
+    pointer-events: none
+    font-size: 1rem
+  span.active
+    top: 0
+    background-color: $secondary
+    font-size: 0.75rem
+
+.inputfile
+  opacity: 0
+  position: absolute
+  pointer-events: none
+.label-file
+  position: relative
+  cursor: pointer
+  display: flex
+  align-items: center
+  margin-bottom: 2rem
+  span
+    border-bottom: 1px dashed $text
+    text-underline-position: under
+    line-height: 1.2
+  &:before
+    content: ''
+    color: #000
+    width: 20px
+    height: 20px
+    background-image: url(../img/general/skrepka.svg)
+    background-size: contain
+    background-repeat: no-repeat
+    display: block
+
+.instagram-block
+  display: flex
+  padding-top: 10px
+  &:before
+    top: 0
+  .inst-col.inst-col--translate
+    transform: translatey(25px)
+    padding-left: 5px
+    padding-right: 0
+  .inst-col
+    padding-right: 5px
+    flex: 0 0 50%
+    width: 50%
+    img
+      margin-bottom: 10px
+      width: 100%
+      transition: .3s
+      will-change: transform
+      cursor: pointer
+      &:hover
+        transform: scale(1.05)
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3)
+      &:last-child
+        margin-bottom: 0
+select::-ms-expand /* для IE */ 
+  display: none
+select
+  background: url(/img/general/angle-red.svg) no-repeat calc(100% - 11px) center
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  padding: 0 25px 0 10px
+  border: 1px solid #E3E3E3
+  font-weight: 300
+  option
+    font-weight: 300
+.filter-block
+.filter-item
+  width: 100%
+  margin-bottom: 0
+  select
+    width: 100%
+    height: 40px
+  &__price
+    margin-bottom: .7rem
+    font-size: 1.125rem
+    font-weight: normal
+.irs--flat .irs-line
+  background-color: $text
+  height: 1px
+  top: 26px
+.irs--flat .irs-bar
+  height: 2px
+  background-color: $accent
+.irs--flat .irs-handle>i:first-child
+  width: 9px
+  height: 9px
+  background-color: $accent
+.irs-min
+  display: none
+.irs-max
+  display: none
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single
+  background: #fff
+  color: $text
+  font-size: 1rem
+  font-weight: normal
+.irs-from, .irs-to, .irs-single
+  top: -5px
+  &:after
+    content: ' ₽'
+    font-family: $d-font
+.irs--flat .irs-from:before, .irs--flat .irs-to:before, .irs--flat .irs-single:before
+  border-color: white
+.icon-reload
+  width: 20px
+  height: 20px
+  vertical-align: baseline
+  margin-left: 5px
+  cursor: pointer
+  transition: .3s ease
+  position: relative
+  &:hover
+    fill: $accent
+.icon-reload.active
+  animation: reload .5s ease
+@keyframes reload
+  from
+    transform: rotate(0)
+  to
+    transform: rotate(360deg)
+.catalog-list
+  position: relative
+  &:before
+    content: ''
+    height: 1px
+    position: absolute
+    right: 15px
+    left: 15px
+    top: -1.5rem
+    background: #E3E3E3
+.card-item
+  border: 1px solid #E3E3E3
+  position: relative
+  margin-bottom: 25px
+  transition: .3s ease
+  &:hover
+    border: 1px solid $accent
+    box-shadow: 0 0 5px 0 $accent
+  &__content
+    padding: 1.25rem
+  &__photo
+    height: 222px
+    width: 100%
+    background-size: contain
+    background-position: center
+    background-repeat: no-repeat
+    margin-bottom: 20px
+  &__material
+    text-align: center
+    font-size: 0.875rem
+    margin-bottom: .2rem
+  &__title
+    margin-bottom: 1rem
+    text-align: center
+    font-size: 1.125rem
+    color: $accent
+    font-weight: normal
+  &__spec
+    margin-bottom: .2rem
+    display: flex
+    justify-content: space-between
+  &__spec-value
+    font-weight: normal
+  &__footer
+    background-color: $secondary
+    display: flex
+    justify-content: space-between
+    align-items: center
+    text-align: center
+  &__cart
+    vertical-align: top
+    height: 3.75rem
+  &__price
+    font-size: 26px
+    color: $accent
+    flex: 1 1 100%
+    font-weight: normal
+  .icon-basket
+    width: 20px
+    height: 20px
+    fill: #fff
+    position: relative
+    bottom: 3px
+    margin-right: 8px
+  .card-item__cart.btn
+    &:hover
+      background: #FF2222
+@keyframes slideme
+  0%
+    left: -30px
+    margin-left: 0px
+  30% 
+    left: 110%
+    margin-left: 80px
+  100%
+    left: 110%
+    margin-left: 80px
+.card-item__item-new
+  display: none
+.card-item__item-hit
+  display: none
+.card-item.hit-item
+  .card-item__item-hit
+    display: block
+    height: 26px
+    width: 82px
+    content: ''
+    font-weight: bold
+    background-color: #F7B83F
+    font-size: 12px
+    font-family: $a-font
+    text-transform: uppercase
+    letter-spacing: 0.04em
+    position: absolute
+    top: -1px
+    left: -1px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    &:after
+      content: ""
+      display: block
+      width: 10px
+      height: 150%
+      margin-left: 60px
+      background: linear-gradient(to right, transparent 0%, rgba(255,255,255, .8) 50%, transparent 100%)
+      position: absolute
+      left: -40px
+      top: -25%
+      z-index: 1
+      transform: rotate(45deg)
+      transition: all 0.1s
+      animation-name: slideme
+      animation-duration: 4s
+      animation-delay: 0.05s
+      animation-timing-function: ease-in-out
+      animation-iteration-count: infinite
+  // &:before
+  //   height: 26px
+  //   width: 82px
+  //   content: 'Хит продаж'
+  //   font-weight: bold
+  //   background-color: #F7B83F
+  //   font-size: 12px
+  //   font-family: $a-font
+  //   text-transform: uppercase
+  //   letter-spacing: 0.04em
+  //   position: absolute
+  //   top: -1px
+  //   left: -1px
+  //   display: flex
+  //   align-items: center
+  //   justify-content: center
+  
+.card-item.new-item
+  .card-item__item-new
+    top: -1px
+    height: 26px
+    width: 82px
+    font-weight: bold
+    background-color: $accent
+    font-size: 12px
+    font-family: $a-font
+    text-transform: uppercase
+    letter-spacing: 0.04em
+    position: absolute
+    color: #fff
+    left: -1px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    &:after
+      content: ""
+      display: block
+      width: 10px
+      height: 150%
+      margin-left: 60px
+      background: linear-gradient(to right, transparent 0%, rgba(255,255,255, .8) 50%, transparent 100%)
+      position: absolute
+      left: -40px
+      top: -25%
+      z-index: 1
+      transform: rotate(45deg)
+      transition: all 0.1s
+      animation-name: slideme
+      animation-duration: 4s
+      animation-delay: 0.05s
+      animation-timing-function: ease-in-out
+      animation-iteration-count: infinite
+.card-item.hit-item.new-item
+  .card-item__item-new
+    top: 30px
+.card-item.new-item.hit-item
+  &:after
+    top: 31px
+.promo-banner
+  height: 270px
+  margin-bottom: 25px
+
+.const-toggle-undo
+  transform: rotatey(180deg)
+.icon-share
+  width: 30px
+  height: 20px
+
+
+.section-banner.section-banner--small
+  height: 25vh
+  h4
+    font-weight: normal
+    margin-bottom: 0
+.catalog-list.row.catalog-list--inner:before
+  display: none
+
+#map
+  height: 100vh
+  position: fixed
+  left: 263px
+  right: 50%
+  width: calc((100% / 2) - 263px)
+
+.section-contacts
+  form
+    .label-container span.active
+      background-color: #fff
+
+textarea
+  outline: none!important
+
+.tags .tag
+  transition: all .2s linear
+  display: inline-block
+  padding: 10px 15px 9px
+  margin-right: 11px
+  margin-bottom: 14px
+  border: 1px solid transparent
+  color: #666
+  text-decoration: none
+.tags .tag.main
+  font-weight: 400
+  color: $accent
+  border-color: $accent
+.tags .tag.active
+  background-color: $accent
+  color: #fff
+  position: relative
+  padding-right: 29px
+.tags .tag.active:after
+    transition: all .4s linear
+    width: 16px
+    height: 17px
+    transform: rotate(90deg) scale(.5)
+    content: '\2716'
+    position: absolute
+    top: 14px
+    right: 6px
+    text-decoration: none
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    font-size: 20px
+.tags .tag.active:hover:after
+  transform: scale(.5)
+
+.cases-list
+  columns: 4
+  a
+    margin-bottom: 17px
+    width: 100%
+    display: inline-block
+    picture
+      overflow: hidden
+    img
+      transition: .8s ease
+      backface-visibility: hidden
+    &:hover
+      img
+        transform: scale(1.2)
+
+.ekko-lightbox
+  .modal-content
+    padding: 0
+@import media

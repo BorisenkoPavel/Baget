@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="keywords" content="">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" integrity="sha256-XwfUNXGiAjWyUGBhyXKdkRedMrizx1Ejqo/NReYNdUE=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous">
+  </head>
+  <body class="index-page">
+    <div class="wrapper">
+      <header>
+        <div class="header text-center"><a class="mb-4" href="/"><img class="logo" src="img/general/logo.svg" alt=""></a>
+          <div class="header-content d-flex flex-column">
+            <ul class="nav no-decoration d-flex flex-column">
+              <li><a class="link py-2 d-inline-block" href="">Услуги</a></li>
+              <li><a class="link py-2 d-inline-block" href="">Материалы</a></li>
+              <li><a class="link py-2 d-inline-block" href="">Портфолио</a></li>
+              <li><a class="link py-2 d-inline-block" href="">Готовая продукция</a></li>
+              <li><a class="link py-2 d-inline-block" href="">Отзывы</a></li>
+              <li><a class="link py-2 d-inline-block" href="">О мастерской</a></li>
+              <li><a class="link py-2 d-inline-block" href="">Вопрос-ответ</a></li>
+              <li><a class="link py-2 d-inline-block" href="">Контакты</a></li>
+            </ul>
+            <div class="btn" data-toggle="modal" data-target="#modal">Обратная связь</div><a class="phone link b" href="tel: +73852639401">+7 (3852) 63-94-01</a>
+            <div class="social d-flex align-items-center justify-content-center mb-2"><a href="">
+                <svg class="svg-sprite-icon icon-vk mr-4 social-icon">
+                  <use xlink:href="img/svg/symbol/sprite.svg#vk"></use>
+                </svg></a><a href="">
+                <svg class="svg-sprite-icon icon-instagram social-icon">
+                  <use xlink:href="img/svg/symbol/sprite.svg#instagram"></use>
+                </svg></a></div>
+          </div>
+          <div class="copyright">© Багетная мастерская «Декор Люкс» Разработка сайта — Е1Медиа</div>
+        </div>
+        <div class="mobile-header"><a href="/"><img class="logo logo-mobile" src="img/general/logo.svg" alt=""></a>
+          <div class="hamburger hamburger--arrowalt">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <section class="section-banner section-banner--full p-0">
+          <div class="swiper-container banner-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background: url(/img/content/banner1.jpg) no-repeat center/cover"></div>
+              <div class="swiper-slide" style="background: url(/img/content/banner2.jpg) no-repeat center/cover"></div>
+              <div class="swiper-slide" style="background: url(/img/content/banner3.jpg) no-repeat center/cover"></div>
+              <div class="swiper-slide" style="background: url(/img/content/banner1.jpg) no-repeat center/cover"></div>
+              <div class="swiper-slide" style="background: url(/img/content/banner2.jpg) no-repeat center/cover"></div>
+            </div>
+          </div>
+          <div class="banner-content">
+            <div class="banner-title swiper-container banner-slider-title">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <h1>Широкий выбор </h1>
+                  <h3>багета и паспарту</h3>
+                </div>
+                <div class="swiper-slide">
+                  <h1>Широкий</h1>
+                  <h3>багепарту</h3>
+                </div>
+                <div class="swiper-slide">
+                  <h1>Широкий выбор </h1>
+                  <h3>багета и паспарту</h3>
+                </div>
+                <div class="swiper-slide">
+                  <h1>Широкий</h1>
+                  <h3>багепарту</h3>
+                </div>
+                <div class="swiper-slide">
+                  <h1>Широкий</h1>
+                  <h3>багепарту</h3>
+                </div>
+              </div>
+            </div>
+            <div class="bar-pagination"></div>
+            <div class="banner-nav d-flex">
+              <div class="fraction-pagination">
+                <div class="fraction-current mr-2"></div>
+                <div class="fraction-total"></div>
+              </div>
+              <div class="swiper-pagination banner-pagination"></div>
+              <div class="d-flex">
+                <div class="swiper-button-prev banner-button-prev mr-4">
+                  <svg class="svg-sprite-icon icon-swiper-nav">
+                    <use xlink:href="img/svg/symbol/sprite.svg#swiper-nav"></use>
+                  </svg>
+                </div>
+                <div class="swiper-button-next banner-button-next">
+                  <svg class="svg-sprite-icon icon-swiper-nav">
+                    <use xlink:href="img/svg/symbol/sprite.svg#swiper-nav"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-services">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9 offset-lg-3">
+                <div class="section-title">
+                  <h2>Услуги</h2><a class="arrow-link" href="">Cмотреть все
+                    <svg class="svg-sprite-icon icon-arrow">
+                      <use xlink:href="img/svg/symbol/sprite.svg#arrow"></use>
+                    </svg></a>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-sm-6 col-xl-4 photo-block__container">
+                    <div class="photo-block">
+                      <picture class="photo-block__img">
+                        <source type="image/webp" srcset="img/content/photo1.webp"/>
+                        <source type="image/jpg'" srcset="img/content/photo1.jpg"/><img src="img/content/photo1.jpg"/>
+                      </picture>
+                      <div class="angle">
+                        <svg width="83" height="110" viewBox="0 0 83 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="polygon" d="M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3" stroke="#C4C4C4" stroke-width="6"></path>
+                          <path class="angle-svg" d="M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z" fill="#C4C4C4"></path>
+                          <path class="angle-svg" d="M76.9999 0H82.9999L76.9999 6V0Z" fill="#C4C4C4"></path>
+                        </svg>
+                      </div><a class="arrow-link photo-block__title stretched-link" href="">Оформление живописи
+                        <svg class="svg-sprite-icon icon-arrow">
+                          <use xlink:href="img/svg/symbol/sprite.svg#arrow"></use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xl-4 photo-block__container">
+                    <div class="photo-block">
+                      <picture class="photo-block__img">
+                        <source type="image/webp" srcset="img/content/photo2.webp"/>
+                        <source type="image/jpg'" srcset="img/content/photo2.jpg"/><img src="img/content/photo2.jpg"/>
+                      </picture>
+                      <div class="angle">
+                        <svg width="83" height="110" viewBox="0 0 83 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="polygon" d="M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3" stroke="#C4C4C4" stroke-width="6"></path>
+                          <path class="angle-svg" d="M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z" fill="#C4C4C4"></path>
+                          <path class="angle-svg" d="M76.9999 0H82.9999L76.9999 6V0Z" fill="#C4C4C4"></path>
+                        </svg>
+                      </div><a class="arrow-link photo-block__title stretched-link" href="">Оформление вышивки
+                        <svg class="svg-sprite-icon icon-arrow">
+                          <use xlink:href="img/svg/symbol/sprite.svg#arrow"></use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xl-4 photo-block__container">
+                    <div class="photo-block">
+                      <picture class="photo-block__img">
+                        <source type="image/webp" srcset="img/content/photo3.webp"/>
+                        <source type="image/jpg'" srcset="img/content/photo3.jpg"/><img src="img/content/photo3.jpg"/>
+                      </picture>
+                      <div class="angle">
+                        <svg width="83" height="110" viewBox="0 0 83 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="polygon" d="M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3" stroke="#C4C4C4" stroke-width="6"></path>
+                          <path class="angle-svg" d="M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z" fill="#C4C4C4"></path>
+                          <path class="angle-svg" d="M76.9999 0H82.9999L76.9999 6V0Z" fill="#C4C4C4"></path>
+                        </svg>
+                      </div><a class="arrow-link photo-block__title stretched-link" href="">Оформление икон
+                        <svg class="svg-sprite-icon icon-arrow">
+                          <use xlink:href="img/svg/symbol/sprite.svg#arrow"></use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xl-4 photo-block__container">
+                    <div class="photo-block">
+                      <picture class="photo-block__img">
+                        <source type="image/webp" srcset="img/content/photo4.webp"/>
+                        <source type="image/jpg'" srcset="img/content/photo4.jpg"/><img src="img/content/photo4.jpg"/>
+                      </picture>
+                      <div class="angle">
+                        <svg width="83" height="110" viewBox="0 0 83 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="polygon" d="M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3" stroke="#C4C4C4" stroke-width="6"></path>
+                          <path class="angle-svg" d="M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z" fill="#C4C4C4"></path>
+                          <path class="angle-svg" d="M76.9999 0H82.9999L76.9999 6V0Z" fill="#C4C4C4"></path>
+                        </svg>
+                      </div><a class="arrow-link photo-block__title stretched-link" href="">Оформление фотографий
+                        <svg class="svg-sprite-icon icon-arrow">
+                          <use xlink:href="img/svg/symbol/sprite.svg#arrow"></use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xl-4 photo-block__container">
+                    <div class="photo-block">
+                      <picture class="photo-block__img">
+                        <source type="image/webp" srcset="img/content/photo5.webp"/>
+                        <source type="image/jpg'" srcset="img/content/photo5.jpg"/><img src="img/content/photo5.jpg"/>
+                      </picture>
+                      <div class="angle">
+                        <svg width="83" height="110" viewBox="0 0 83 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="polygon" d="M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3" stroke="#C4C4C4" stroke-width="6"></path>
+                          <path class="angle-svg" d="M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z" fill="#C4C4C4"></path>
+                          <path class="angle-svg" d="M76.9999 0H82.9999L76.9999 6V0Z" fill="#C4C4C4"></path>
+                        </svg>
+                      </div><a class="arrow-link photo-block__title stretched-link" href="">Фигурная резка паспарту
+                        <svg class="svg-sprite-icon icon-arrow">
+                          <use xlink:href="img/svg/symbol/sprite.svg#arrow"></use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xl-4 photo-block__container">
+                    <div class="photo-block">
+                      <picture class="photo-block__img">
+                        <source type="image/webp" srcset="img/content/photo6.webp"/>
+                        <source type="image/jpg'" srcset="img/content/photo6.jpg"/><img src="img/content/photo6.jpg"/>
+                      </picture>
+                      <div class="angle">
+                        <svg width="83" height="110" viewBox="0 0 83 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="polygon" d="M5.99988 104V3C5.99988 3 72.8994 3 76.9999 3" stroke="#C4C4C4" stroke-width="6"></path>
+                          <path class="angle-svg" d="M2.99994 104L8.99987 104L2.99988 110L2.99994 104Z" fill="#C4C4C4"></path>
+                          <path class="angle-svg" d="M76.9999 0H82.9999L76.9999 6V0Z" fill="#C4C4C4"></path>
+                        </svg>
+                      </div><a class="arrow-link photo-block__title stretched-link" href="">Дорисовка на паспарту
+                        <svg class="svg-sprite-icon icon-arrow">
+                          <use xlink:href="img/svg/symbol/sprite.svg#arrow"></use>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-promo text-white">
+          <div class="circle-promo"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9 offset-lg-3">
+                <h2>Пример оформления живописи</h2>
+                <picture class="mobile-cons w-100 d-sm-none mt-5 mb-4">
+                  <source type="image/webp" srcset="img/general/mobile-cons.webp"/>
+                  <source type="image/png'" srcset="img/general/mobile-cons.png"/><img src="img/general/mobile-cons.png"/>
+                </picture>
+                <div class="constructor-container">
+                  <div class="constructor my-5 wow d-none d-sm-block" data-wow-offset="400">
+                    <div class="part part1"><img src="/img/general/part (1).jpg" alt="">
+                      <div class="part-text">Задник</div>
+                    </div>
+                    <div class="part part2"><img src="/img/general/part (2).jpg" alt="">
+                      <div class="part-text part-text--top">Оригинал</div>
+                    </div>
+                    <div class="part part3"><img src="/img/general/part (1).png" alt="">
+                      <div class="part-text">Паспарту</div>
+                    </div>
+                    <div class="part part4"><img src="/img/general/part (2).png" alt="">
+                      <div class="part-text part-text--top">Декоративный кант</div>
+                    </div>
+                    <div class="part part5"><img src="/img/general/part (3).png" alt="">
+                      <div class="part-text">Стекло</div>
+                    </div>
+                    <div class="part part6"><img src="/img/general/part (4).png" alt="">
+                      <div class="part-text part-text--top">Багет</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-workroom">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9 offset-lg-3">
+                <h2>Декор Люкс — <span class="text-lowercase">багетная мастерская</span></h2>
+                <div class="row no-gutters">
+                  <div class="col-sm-5 img-block__left order-1 order-sm-0">
+                    <div class="img-block rectangle wow img-block--big" data-wow-offset="200">
+                      <picture class="img-block__photo">
+                        <source type="image/webp" srcset="img/content/workroom1.webp"/>
+                        <source type="image/jpg'" srcset="img/content/workroom1.jpg"/><img src="img/content/workroom1.jpg"/>
+                      </picture>
+                      <div class="img-block__num">10</div>
+                      <div class="block-title">10 лет опыта работы</div>
+                    </div><a class="btn arrow-link bg-transparent" href="">Подробнее
+                      <svg class="svg-sprite-icon icon-arrow">
+                        <use xlink:href="img/svg/symbol/sprite.svg#arrow"></use>
+                      </svg></a>
+                  </div>
+                  <div class="col-sm-7 img-block__right d-flex justify-content-center flex-column mb-5 mb-sm-0">
+                    <div class="img-block rectangle wow" data-wow-offset="200">
+                      <picture class="img-block__photo">
+                        <source type="image/webp" srcset="img/content/workroom2.webp"/>
+                        <source type="image/jpg'" srcset="img/content/workroom2.jpg"/><img src="img/content/workroom2.jpg"/>
+                      </picture>
+                      <div class="img-block__num">2000</div>
+                      <div class="block-title">2000 выполненных заказов</div>
+                    </div>
+                    <div class="img-block rectangle blue wow" data-wow-offset="200">
+                      <picture class="img-block__photo">
+                        <source type="image/webp" srcset="img/content/workroom3.webp"/>
+                        <source type="image/jpg'" srcset="img/content/workroom3.jpg"/><img src="img/content/workroom3.jpg"/>
+                      </picture>
+                      <div class="img-block__num">3</div>
+                      <div class="block-title">3 часа оформляем одну работу</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-cases bg-secondary">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9 offset-lg-3">
+                <h2>Наши работы</h2>
+                <div class="d-flex align-items-start justify-content-between flex-column flex-sm-row">
+                  <div class="title-desc mb-4">Мы предложим Вам наиболее подходящие варианты оформления, дадим подробные объяснения и советы, качественно изготовим красивое обрамление для Вашего произведения. </div><a class="btn arrow-link bg-transparent mt-2 mb-4 mb-sm-0" href="">Все работы
+                    <svg class="svg-sprite-icon icon-arrow">
+                      <use xlink:href="img/svg/symbol/sprite.svg#arrow"></use>
+                    </svg></a>
+                </div>
+                <div class="swiper-container case-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide rectangle">
+                      <picture class="case-photo">
+                        <source type="image/webp" srcset="img/content/case1.webp"/>
+                        <source type="image/jpg'" srcset="img/content/case1.jpg"/><img src="img/content/case1.jpg"/>
+                      </picture>
+                    </div>
+                    <div class="swiper-slide rectangle">
+                      <picture class="case-photo">
+                        <source type="image/webp" srcset="img/content/case2.webp"/>
+                        <source type="image/jpg'" srcset="img/content/case2.jpg"/><img src="img/content/case2.jpg"/>
+                      </picture>
+                    </div>
+                    <div class="swiper-slide rectangle">
+                      <picture class="case-photo">
+                        <source type="image/webp" srcset="img/content/case3.webp"/>
+                        <source type="image/jpg'" srcset="img/content/case3.jpg"/><img src="img/content/case3.jpg"/>
+                      </picture>
+                    </div>
+                    <div class="swiper-slide rectangle">
+                      <picture class="case-photo">
+                        <source type="image/webp" srcset="img/content/case4.webp"/>
+                        <source type="image/jpg'" srcset="img/content/case4.jpg"/><img src="img/content/case4.jpg"/>
+                      </picture>
+                    </div>
+                    <div class="swiper-slide rectangle">
+                      <picture class="case-photo">
+                        <source type="image/webp" srcset="img/content/case1.webp"/>
+                        <source type="image/jpg'" srcset="img/content/case1.jpg"/><img src="img/content/case1.jpg"/>
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev case-prev">
+                    <svg class="svg-sprite-icon icon-arrow">
+                      <use xlink:href="img/svg/symbol/sprite.svg#arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="swiper-button-next case-next">
+                    <svg class="svg-sprite-icon icon-arrow">
+                      <use xlink:href="img/svg/symbol/sprite.svg#arrow"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-reviews">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9 offset-lg-3">
+                <h2>Отзывы</h2>
+                <div class="row">
+                  <div class="col-md-5 order-1 order-md-0 review-slider-text-container">
+                    <div class="swiper-container review-slider-text">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <p>
+                            Багетная мастерская очень хорошая!
+                            Я с 2011 года приношу свои работы.
+                            Все оформляют качественно и со вкусом.
+                            Всегда в срок, бывает даже раньше!
+                            Девочки, очень хорошо подбирают
+                            оформление, прислушиваются
+                            к нашему мнению, помогают подчеркнуть
+                            красоту наших работ! Большой выбор
+                            багета, есть и дорогие, и подешевле.
+                            Я ваш постоянный клиент!
+                          </p>
+                          <div class="text-big b mb-5">Ольга Штремель</div>
+                        </div>
+                        <div class="swiper-slide">
+                          <p>
+                            Багетная мастерская очень хорошая!
+                            Все оформляют качественно и со вкусом.
+                            Всегда в срок, бывает даже раньше!
+                            Девочки, очень хорошо подбирают
+                            оформление, прислушиваются
+                            багета, есть и дорогие, и подешевле.
+                            Я ваш постоянный клиент!
+                          </p>
+                          <div class="text-big b mb-5">Ольга Штремель</div>
+                        </div>
+                      </div>
+                    </div><a class="arrow-link bg-transparent btn" href="">Все ОТЗЫВЫ
+                      <svg class="svg-sprite-icon icon-arrow">
+                        <use xlink:href="img/svg/symbol/sprite.svg#arrow"></use>
+                      </svg></a>
+                  </div>
+                  <div class="col-md-6 offset-md-1 review-slider-photo-container h-100">
+                    <div class="swiper-container review-slider-photo">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <picture class="review-photo">
+                            <source type="image/webp" srcset="img/content/review1.webp"/>
+                            <source type="image/jpg'" srcset="img/content/review1.jpg"/><img src="img/content/review1.jpg"/>
+                          </picture>
+                        </div>
+                        <div class="swiper-slide">
+                          <picture class="review-photo">
+                            <source type="image/webp" srcset="img/content/review1.webp"/>
+                            <source type="image/jpg'" srcset="img/content/review1.jpg"/><img src="img/content/review1.jpg"/>
+                          </picture>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="review-nav">
+                      <div class="review-nav__arrow">
+                        <div class="swiper-button-prev review-prev">
+                          <svg class="svg-sprite-icon icon-arrow">
+                            <use xlink:href="img/svg/symbol/sprite.svg#arrow"></use>
+                          </svg>
+                        </div>
+                        <div class="swiper-button-next review-next">
+                          <svg class="svg-sprite-icon icon-arrow">
+                            <use xlink:href="img/svg/symbol/sprite.svg#arrow"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination review-pagination"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-news bg-secondary">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9 offset-lg-3">
+                <h2 class="mb-5">Новости и акции</h2>
+                <div class="row no-gutters">
+                  <div class="col-sm-5 img-block__left order-1 order-sm-0">
+                    <div class="img-block rectangle wow" data-wow-offset="200">
+                      <picture class="img-block__photo">
+                        <source type="image/webp" srcset="img/content/news1.webp"/>
+                        <source type="image/jpg'" srcset="img/content/news1.jpg"/><img src="img/content/news1.jpg"/>
+                      </picture>
+                      <div class="block-title"> 
+                        <div class="img-block__title mb-2">Распродажа пластиковых багетов</div>
+                        <div class="img-block__date text-primary">12 сентября</div>
+                        <div class="block-desc">Акция продлится с 16.09 по 16.10</div>
+                      </div>
+                    </div><a class="btn arrow-link bg-transparent mt-5" href="">Все Новости
+                      <svg class="svg-sprite-icon icon-arrow">
+                        <use xlink:href="img/svg/symbol/sprite.svg#arrow"></use>
+                      </svg></a>
+                  </div>
+                  <div class="col-sm-7 img-block__right d-flex justify-content-center flex-column mb-5">
+                    <div class="img-block rectangle wow" data-wow-offset="200">
+                      <picture class="img-block__photo">
+                        <source type="image/webp" srcset="img/content/news2.webp"/>
+                        <source type="image/jpg'" srcset="img/content/news2.jpg"/><img src="img/content/news2.jpg"/>
+                      </picture>
+                      <div class="block-title"> 
+                        <div class="img-block__title mb-2">Авторские схемы оформления</div>
+                        <div class="img-block__date text-primary">12 сентября</div>
+                      </div>
+                    </div>
+                    <div class="img-block rectangle blue wow" data-wow-offset="200">
+                      <picture class="img-block__photo">
+                        <source type="image/webp" srcset="img/content/news3.webp"/>
+                        <source type="image/jpg'" srcset="img/content/news3.jpg"/><img src="img/content/news3.jpg"/>
+                      </picture>
+                      <div class="block-title"> 
+                        <div class="img-block__title mb-2">Акция три плюс два</div>
+                        <div class="img-block__date text-primary">10 октября</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content p-4 px-5">
+            <div class="modal-header p-0 mb-5 border-0">
+              <h3>Оставьте заявку</h3>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <form class="mb-4">
+              <label class="label-container error">
+                <input class="input-text" type="text"><span>Представьтесь, пожалуйста</span>
+              </label>
+              <label class="label-container">
+                <input class="input-text" type="text"><span>Ваш номер телефона </span>
+              </label>
+              <label class="label-container label-container--textarea mb-2">
+                <textarea class="input-text" name="" rows="4"></textarea><span>Оставьте комментарий...</span>
+              </label>
+              <input class="inputfile" id="file" data-multiple-caption="{count} файла выбрано" type="file" name="file[]" multiple="">
+              <label class="label-file" for="file"><span>Прикрепите файл, если это необходимо</span></label>
+              <button class="btn w-50 justify-content-center" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+    <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js" integrity="sha256-uckMYBvIGtce2L5Vf/mwld5arpR5JuhAEeJyjPZSUKY=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script>
+    <script>
+      // this is important for IEs
+      var polyfilter_scriptpath = '/js/';
+    </script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>

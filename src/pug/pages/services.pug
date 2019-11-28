@@ -1,0 +1,89 @@
+extends ../templates/main
+
+block variables
+  - var title = 'Страница услуг'
+block content
+  section.section-banner.p-0
+    div.h-100(style="background: url(/img/content/banner2.jpg) no-repeat center/cover")
+    .banner-content
+      .banner-title
+        h1 Оформление живописи
+  section.section-change.pb-0
+    .container
+      .row
+        .col-lg-9.offset-lg-3
+          h2 Как правильно выбрать багет для рамы?
+        .col-md-7.col-lg-5.offset-lg-3.z-index.order-1.order-md-0
+          p Первый принцип, которым следует руководствоваться при выборе багета - это то, что его подбирают под картину, а не под интерьер. При хорошем обращении картина радует владельца годы и десятилетия, но если вы подбирали багет, например, под цвет и рисунок обоев, то может случиться так, что при каждом новом ремонте придется заказывать новую раму. Это не только расточительно, но и вредно для самой картины - такие манипуляции ей на пользу не пойдут.
+          p Выбирая багет для рамы, руководствуйтесь цветовой гаммой картины. Наилучшим вариантом считается такая подборка, когда цвет багета на полотна светлее или темнее, чем основной цвет картины, однако иногда очень интересным художественным решением оказывается игра на контрасте между тоном картины и цветом багета. Если же вы не склонны к таким экспериментам, то смело выбирайте багет цвета натурального дерева: такие рамы подходят практически ко всем картинам.
+          p Багет может быть гладким или же профилированным, покрытым орнаментом. Здесь тоже открываются широкие возможности для выбора. Лучше всего подбирать орнамент в том стиле, в котором выполнена картина: авангардистская живопись, к примеру, будет крайне неудачно смотреться в раме классического стиля с позолотой и лепниной.
+        .col-md-5.col-lg-4.services-img-container.pt-4.pt-md-5.mb-5.mb-md-0
+          +pic('services-img w-100 rectangle mb-3', 'content', 'services-img','jpg')
+          .services-img-desc.text-center Правильно подобранный багет
+  section.section-price.pb-0
+    .container
+      .row
+        .col-lg-9.offset-lg-3
+          h2 Расчет стоимости и сроков
+        .col-md-7.col-lg-5.offset-lg-3.z-index
+          p Когда выбор оформления завершен, наши специалисты сделают расчет стоимости оформления и определяются сроки изготовления. Как правило, оформление происходит в течении недели. Но возможно и срочное изготовление. Эти вопросы решаются в индивидуальном порядке, в зависимости от загруженности мастерской. Так же обсуждаются и вопросы о скидках. Мы стараемся сделать все, чтобы наши клиенты остались довольны нашей работой.
+        .col-md-5.col-lg-4.mt-n2.mt-md-0
+          .price-block
+            .price-block__title оформляем живопись в багеты
+            .price-block__value от <span>2200 ₽ </span>
+            +icon('ruble')
+  section.section-cases
+    .container
+      .row
+        .col-lg-9.offset-lg-3
+          h2.d-flex.align-items-center.justify-content-between Примеры работ
+            a.btn.arrow-link.bg-transparent(href="")
+              | Все работы
+              +icon('arrow')
+          .swiper-container.case-slider
+            .swiper-wrapper
+              .swiper-slide.rectangle
+                +pic('case-photo', 'content', 'case1','jpg')
+              .swiper-slide.rectangle
+                +pic('case-photo', 'content', 'case1','jpg')
+              .swiper-slide.rectangle
+                +pic('case-photo', 'content', 'case1','jpg')
+              .swiper-slide.rectangle
+                +pic('case-photo', 'content', 'case1','jpg')
+              .swiper-slide.rectangle
+                +pic('case-photo', 'content', 'case1','jpg')
+            .swiper-button-prev.case-prev
+              +icon('arrow')
+            .swiper-button-next.case-next
+              +icon('arrow')
+  section.section-form.bg-secondary
+    .container
+      .row
+        .col-md-6.col-lg-4.offset-lg-3.d-flex.flex-column.justify-content-between.mb-4.mb-md-0
+          h3 Оставьте заявку
+          form.mb-4
+            label.label-container.error
+              input.input-text(type="text")
+              span Представьтесь, пожалуйста
+            label.label-container
+              input.input-text(type="text")
+              span Ваш номер телефона 
+            label.label-container.label-container--textarea.mb-2
+              textarea.input-text(name="", rows="4")
+              span Оставьте комментарий...
+            input#file.inputfile(data-multiple-caption="{count} файла выбрано" type="file" name="file[]" multiple="")
+            label.label-file(for="file")
+              span Прикрепите файл, если необходимо
+            button.btn.w-50.justify-content-center(type='submit') Отправить
+        .col-md-6.col-lg-4.offset-lg-1
+          h3.mb-3 Мастерская в instagram
+            +icon('reload')
+          p.mb-4 Больше интересных работ можно посмотреть в нашем аккаунте: 
+            a(href=""): b @dekorlux1
+          .instagram-block.rectangle
+            .inst-col
+              img(src="img/content/inst1.jpg", alt="")
+              img(src="img/content/inst2.jpg", alt="")
+            .inst-col.inst-col--translate
+              img(src="img/content/inst3.jpg", alt="")
+              img(src="img/content/inst4.jpg", alt="")
