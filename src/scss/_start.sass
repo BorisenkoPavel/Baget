@@ -7,6 +7,10 @@ html
 	@include fluid-type($min_width, $max_width, $min_font, $max_font)
 	height: 100%
 
+body.is-active
+	overflow: hidden
+	.content, .mobile-header
+		transform: translate(-263px)
 body
 	height: 100%
 	font-family: $d-font
@@ -74,10 +78,8 @@ button,
 	flex: 1 0 auto
 	position: relative
 	transition: .4s ease
-	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1)
-.content.is-active, .mobile-header.is-active
-	transform: translate(-263px)
-
+	z-index: 90
+	box-shadow: 2px 0 5px 0 rgba(0, 0, 0, 0.14)
 section
 	position: relative
 	padding: 4.5rem 0

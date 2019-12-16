@@ -19,9 +19,7 @@ $(document).ready(function () {
   
   $(".hamburger").on("click", function () {
     $(this).toggleClass('is-active')
-    $('.content').toggleClass('is-active')
-    $('.mobile-header').toggleClass('is-active')
-    $('.header').toggleClass('is-active')
+    $('body').toggleClass('is-active')
   });
 
 	var bannerSlider= new Swiper('.swiper-container.banner-slider', {
